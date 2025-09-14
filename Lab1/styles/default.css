@@ -1,0 +1,143 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto, Arial, "sans-serif";
+}
+
+header {
+    min-width: 600px;
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+img#logo {
+    height: 32px;
+    margin: auto 0px;
+}
+
+header > menu {
+    display: flex;
+    margin: auto 0px;
+}
+
+header > menu > li {
+    padding: 10px 20px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header > menu > li:hover {
+    color: #d9788d;
+    cursor: pointer;
+}
+
+div#container-about {
+    background-image: url('../img/container.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 752px;
+    align-content: center;
+}
+
+div#container-about > div {
+    height: 263px;
+    width: 485px;
+    background-color: white;
+    padding: 60px;
+    margin: 0px calc(50% - 600px);
+}
+
+h1 {
+    font-size: 75px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 0px;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    cursor: pointer;
+}
+
+a:hover {
+    border-bottom-color: #d9788d;
+}
+
+a.button {
+    border-bottom-style: none;
+    padding: 17px 78px;
+    background-color: #f0c5ce;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #a26773;
+    display: inline-block;
+}
+
+a.button:hover {
+    background-color: #e49dac;
+    color: #945b66;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-26 {
+    margin-top: 30px;
+}
+
+p {
+    margin: 0px;
+    line-height: 2;
+}
+
+div.content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.content-welcome {
+    height: 760px;
+}
+
+div.content-welcome > img {
+    height: 594px;
+}
+
+div.content > * {
+    margin: auto 7px;
+}
+
+div.content > * {
+    padding: 30px 50px;
+}
+
+div.content-about-studio > img {
+    width: 590px;
+}
+div.border {
+    width: 100px;
+    height: 10px;
+    background-color: #f0c5ce;
+    margin-bottom: 21px;
+}
