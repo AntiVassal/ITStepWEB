@@ -1,0 +1,639 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header > img {
+    height: 53px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 104px;
+}
+
+header > nav > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header > nav > ul > li {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0px 19px;
+    cursor: pointer;
+    padding: 10px 0px 12px 0px;
+    font-size: 16px;
+}
+
+header > nav > ul > li:hover {
+    border-bottom: 2px solid #ff5a5a;
+    padding: 10px 0px;
+}
+
+.button {
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid var(--front-color);
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: var(--front-color);
+    background: var(--back-color);
+    display: inline-block;
+}
+
+.button:hover {
+    border: 1px solid var(--front-color);
+    background: var(--front-color);
+    padding: 10px 30px;
+    color: var(--back-color);
+}
+
+section#hero {
+    background: url('../img/background.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 847px;
+    padding: 373px 0px 0px 0px;
+    position: relative;
+    animation: paralaxBackground;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+}
+
+section#hero * {
+    z-index: 1;
+    position: relative;
+}
+
+section#hero::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: 0
+}
+
+section#hero > p {
+    text-align: center;
+    color: white;
+    position: relative;
+    animation: fadeInTitle 1.5s ease-in-out
+}
+
+section#hero > p:first-child {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+section#hero > ul > li > strong {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+section#hero > ul > li > * {
+    display: block;
+}
+
+section#hero > ul > li > strong:first-child {
+    color: #ff5a5a;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    float: left;
+    margin-right: 25px;
+    width: 72px;
+}
+
+section#hero > ul > li > p {
+    color: white;
+    text-wrap: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+section#hero > ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 67px;
+}
+
+section#hero > ul > li {
+    display: block;
+    width: 360px;
+    height: 112px;
+    animation: fadeInStats 1.5s ease-in-out;
+}
+
+section#why-choose-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#why-choose-us > div:first-child {
+    background-color: #00ac92;
+    padding: 90px 50px 30px 80px;
+}
+
+section#why-choose-us > div:last-child {
+    padding: 90px 80px 50px 50px;
+}
+
+section#why-choose-us > div:last-child > p {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+}
+
+section#why-choose-us > div:last-child > ul {
+    margin-top: 20px;
+}
+
+section#why-choose-us > div:last-child > ul > li {
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+section#why-choose-us > div:last-child > ul > li:before {
+    content: "✓";
+    font-size: 14px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+section#why-choose-us > div:last-child > .button {
+    margin-top: 20px;
+}
+
+section#why-choose-us > div {
+    box-sizing: border-box;
+}
+
+section#why-choose-us > div > h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+section#why-choose-us > div:first-child > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+section#why-choose-us > div:first-child > ul > li {
+    list-style: none;
+}
+
+section#why-choose-us > div:first-child > ul > li > img {
+    width: 55px;
+}
+
+section#why-choose-us > div:first-child > ul > li > h3 {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+section#why-choose-us > div:first-child > ul > li > p {
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+section#why-choose-us > div:last-child {
+    background-color: #ff5a5a;
+}
+
+section#why-choose-us > div {
+    width: 50%;
+    min-width: 496px;
+}
+
+section#lang-courses {
+    background-color: #293331;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 0px 40px;
+    justify-content: center;
+}
+
+section#lang-courses > div:first-child {
+    box-sizing: border-box;
+    width: 510px;
+    margin: 160px 60px;
+}
+
+section#lang-courses > div:first-child > h2 {
+    font-size: 36px;
+}
+
+section#lang-courses > div:first-child > p {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+section#lang-courses > div:last-child {
+    position: relative;
+    margin: 120px 70px;
+    padding: 0px 440px 440px 0px;
+}
+
+section#lang-courses > div:last-child:before, section#lang-courses > div:last-child:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 440px;
+    height: 440px;
+    z-index: 1;
+}
+
+section#lang-courses > div:last-child:before {
+    background-color: #00ac92;
+    transform: translate(-60px, 60px);
+}
+
+section#lang-courses > div:last-child:after {
+    background-color: #ff5a5a;
+    transform: translate(60px, -60px);
+}
+
+section#lang-courses > div:last-child > img {
+    position: absolute;
+    width: 440px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    z-index: 4;
+}
+
+section#lang-courses > div:first-child > a.button {
+    margin-top: 40px;
+    padding: 17px 53px 19px 51px;
+}
+
+section#what-we-offer {
+    background-color: #293331;
+    padding: 60px 0px;
+    text-align: center;
+    color: white;
+}
+
+section#what-we-offer > h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+section#what-we-offer > p {
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+section#what-we-offer > div {
+    margin: 46px auto auto auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1170px;
+}
+
+div.card {
+    width: 360px;
+    height: 437px;
+    position: relative;
+    margin: 15px;
+}
+
+div.card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div.card > div {
+    width: 100%;
+    height: 156px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: left;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+div.card > div > h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+div.card > div > p {
+    font-size: 18px;
+}
+
+section#what-we-offer > p:last-child {
+    font-size: 18px;
+    margin-top: 48px;
+}
+
+section#our-courses {
+    background: linear-gradient(to bottom, #293331, #293331 422px, white 423px, white);
+    text-align: center;
+    padding: 95px 30px 0px 30px;
+    color: white;
+}
+
+section#our-courses > h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+section#our-courses > p {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 18px;
+}
+
+section#our-courses > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1156px;
+    margin: auto;
+}
+
+div.price-card {
+    height: 362px;
+    width: 273px;
+    margin: 8px;
+    position: relative;
+}
+
+div.price-card:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+div.price-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.price-card > div {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    text-align: left;
+    padding: 18px 30px 30px 30px;
+    box-sizing: border-box;
+}
+
+div.price-card > div> h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+div.price-card > div> strong {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ff5a5a;
+}
+
+div.price-card > div> p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+div.price-card > div> a.button {
+    font-size: 12px;
+    padding: 10px 30px;
+    --front-color: white;
+    --back-color: #ff5a5a;
+    border-width: 0px;
+}
+
+div.price-card > div> a.button:hover {
+    color: black;
+}
+
+section#our-courses > a.button {
+    --front-color: black;
+    --back-color: white;
+    font-size: 20px;
+    padding: 17px 53px 19px 51px;
+    margin: 42px auto 60px auto;
+}
+
+section#trusted {
+    padding: 60px;
+}
+
+section#trusted > div {
+    display: flex;
+    justify-content: center;
+    max-width: 1164px;
+    margin: auto;
+}
+
+section#trusted > div:first-child * {
+    margin: auto;
+    padding: 50px 30px 0px 30px;
+    border: white solid 12px;
+}
+
+section#trusted > div:last-child {
+    flex-wrap: wrap;
+}
+
+section#trusted > div > h2 {
+    width: 60%;
+    padding-left: 30px;
+}
+
+section#trusted > div > p {
+    width: 40%;
+    line-height: 2;
+    color: #111111
+}
+
+section#trusted > div:last-child {
+    height: 190px;
+}
+
+section#trusted > div:last-child > img {
+    width: 84px;
+    margin: auto 40px;
+}
+
+section#trusted h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+section#trusted p {
+    font-size: 18px;
+}
+
+section#team {
+    padding: 60px;
+    background-color: #ff5a5a;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section#team > h2 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+section#team > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: auto;
+}
+
+section#team > p:last-child {
+    margin-top: 30px;
+}
+
+div.social-card {
+    width: 305px;
+    height: 352px;
+    padding: 30px;
+    align-items: center;
+    border-radius: 3px;
+    background-color: white;
+    margin: 11px;
+}
+
+div.social-card > img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+div.social-card > h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: black;
+}
+
+div.social-card > p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+div.social-card > div {
+    display: flex;
+    justify-content: center;
+}
+
+div.social-card > div >img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    filter: invert(61%) sepia(56%) saturate(5085%) hue-rotate(328deg) brightness(111%) contrast(100%);
+}
+
+p.freepik {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+p.freepik > a {
+    text-decoration-line: underline;
+    cursor: pointer;
+    text-underline-offset: 5px;
+}
+
+p.freepik > a:hover {
+    text-decoration-color: #ff5a5a;
+}
+
+@media only screen and (max-width: 1440px) {
+    section#hero > ul {
+        max-width: 730px;
+        margin: 67px auto 0px auto;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    section#why-choose-us > div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1289px) {
+    section#lang-courses > div, section#lang-courses > div > * {
+        text-align: center;
+    }
+}
+
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInStats {
+    from {
+        transform: translateY(300px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes paralaxBackground {
+    from {
+        background-position-y: 0px;
+    }
+    to {
+        background-position-y: -100px;
+    }
+}
