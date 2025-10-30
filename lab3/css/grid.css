@@ -1,0 +1,227 @@
+section#plans {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: 1fr 273px 273px 273px 273px 1fr;
+    grid-template-rows: 129px 78px 539px;
+}
+
+section#plans > h1 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    align-self: flex-end;
+}
+
+section#plans > p {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+div.price-card {
+    align-self: flex-start;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 48px 74px 26px 70px 40px 40px 40px 82px 1fr;
+    align-items:center;
+}
+
+div.price-card:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+div.price-card > strong, div.price-card > p {
+    align-self: flex-end;
+}
+
+div.price-card > strong:nth-child(3) {
+    align-self: flex-start;
+}
+
+section#task-2-flex {
+    display: none;
+}
+
+section#task-2-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px 360px 360px 1fr;
+    grid-template-rows: 312px 283px 307px;
+    grid-gap: 30px;
+    position: relative;
+    padding: 80px;
+}
+
+section#task-2-grid:before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/40ca0ee707da85a9ba8bdd65ada9f156.jpeg");
+    background-clip: border-area;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 727px;
+    bottom: 0px;
+    left: 0px;
+}
+
+section#task-2-grid:after {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 727px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+section#task-2-grid * {
+    position: relative;
+    z-index: 1;
+}
+
+section#task-2-grid > div:first-child {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 30px;
+    background-color: #bfa065;
+    color: white;
+    vertical-align: center;
+}
+
+section#task-2-grid > div:first-child > h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+section#task-2-grid > div:first-child > p {
+    font-size: 16px;
+    margin: 20px 40px 0px 0px;
+}
+
+section#task-2-grid > img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+section#task-2-grid > img:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+section#task-2-grid > img:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+section#task-2-grid > p {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #bfa065;
+    padding: 30px;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section#task-2-grid > img:nth-child(5) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+section#task-2-grid > img:nth-child(6) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: -1;
+}
+
+section#task-2-grid > div {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: -1;
+    background-color: white;
+    padding: 30px;
+}
+
+section#task-2-grid > div > p {
+    font-size: 16px;
+    margin-right: 40px;
+    line-height: 2;
+}
+
+section#task-2-grid > div > a {
+    display: inline-block;
+    border: #454545 solid 1px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #454545;
+}
+
+section#task-2-grid > div > a:hover {
+    background-color: #454545;
+    color: white;
+}
+
+section#task-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 374px);
+    grid-template-rows: 358px 279px 279px;
+    grid-gap: 10px;
+}
+
+section#task-3 > div > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#task-3 > div:first-child {
+    margin-left: 110px;
+    margin-top: 48px;
+}
+
+section#task-3 > div:nth-child(3) {
+    margin-right: 74px;
+    margin-top: 100px;
+}
+
+section#task-3 > div:nth-child(6), section#task-3 > div:nth-child(4)  {
+    overflow: hidden;
+}
+
+section#task-3 > div:nth-child(4) > img {
+    transform: translateX(100px) scale(1.4);
+}
+
+section#task-3 > div:nth-child(6) > img {
+    transform: translateX(-100px) scale(1.4);
+}
+
+section#task-3 > div:nth-child(7) {
+    margin-right: 14px;
+    margin-left: 80px;
+    margin-bottom: 108px;
+}
+
+section#task-3 > div:nth-child(9) {
+    margin-right: 152px;
+    margin-bottom: 51px;
+}

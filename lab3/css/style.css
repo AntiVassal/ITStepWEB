@@ -1,0 +1,140 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+section#plans {
+    background-image: linear-gradient(45deg, #4f4760, #2c2933);
+    text-align: center;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+section#plans > h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+section#plans > p {
+    font-size: 20px;
+    margin: 32px auto 0px;
+    max-width: 620px;
+}
+
+div.price-card {
+    width: 273px;
+    height: 481px;
+    position: relative;
+}
+
+div.price-card:before {
+    content: "";
+    background-color: var(--color);
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 401px;
+}
+
+div.price-card:after {
+    content: "";
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 110px);
+    width: 220px;
+    height: 170px;
+    box-shadow: 5px 5px 0px 0 rgba(0, 0, 0, 0.1);
+}
+
+div.price-card > strong {
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--color);
+}
+
+div.price-card > strong:first-child {
+    font-size: 20px;
+}
+
+div.price-card > strong:nth-child(3) {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+div.price-card > p {
+    font-size: 20px;
+    color: #f2eff8;
+    box-sizing: border-box;
+}
+
+div.price-card > a {
+    padding: 12px 42px;
+    background-color: white;
+    color: var(--color);
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 5px 5px 0px 0 rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+div.price-card > a:hover {
+    background-color: #ccc1e3;
+}
+
+div.price-card * {
+    position: relative;
+    z-index: 1;
+}
+
+section#task-3 {
+    margin: 60px auto;
+    max-width: 1140px;
+}
+
+section#task-3 > div:nth-child(5) {
+    padding: 30px;
+    text-align: center;
+    transform: scale(1.4);
+    background-color: white;
+    z-index: 1;
+    color: #111111;
+}
+
+section#task-3 > div:nth-child(5) > h1 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 25px;
+}
+
+section#task-3 > div:nth-child(5) > p {
+    font-size: 11.5px;
+    font-weight: normal;
+    margin-top: 14px;
+    line-height: 1.5;
+}
+
+section#task-3 > div:nth-child(5) > a {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: normal;
+    margin-top: 21.5px;
+    padding: 7px 21.5px;
+    color: white;
+    background-color: #f15048;
+    cursor: pointer;
+}
+
+section#task-3 > div:nth-child(5) > a:hover {
+    color: #e6e6e6;
+    background-color: #ef342b;
+}
