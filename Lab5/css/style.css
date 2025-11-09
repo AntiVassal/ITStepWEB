@@ -1,0 +1,54 @@
+nav > ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul > li {
+    list-style: none;
+    padding: 15px 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+nav > ul > li.active {
+    background-color: gray;
+}
+
+nav > ul > li:hover {
+    background-color: black;
+    color: white;
+}
+
+section > div {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: none;
+}
+
+section > div.active {
+    display: inherit;
+}
+
+section > div:nth-child(2) > div, section > div:nth-child(4) > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section > div:nth-child(2) > div > ul, section > div:nth-child(4) > div > ul {
+    min-width: 400px;
+}
+
+section > div:nth-child(2) > div > ul > li, section > div:nth-child(4) > div > ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
