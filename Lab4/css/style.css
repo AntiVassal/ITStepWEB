@@ -1,0 +1,379 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+section#task-1 {
+    max-width: 1440px;
+    height: 838px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    border-left-width: 40px;
+    border-right-width: 40px;
+    border-color: #f4f4f4;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+section#task-1 div {
+    box-sizing: border-box;
+}
+
+section#task-1 > div:first-child {
+    flex-basis: calc(67% - 5px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+section#task-1 > div:first-child > div:first-child {
+    flex-basis: calc(67% - 5px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
+    border-radius: 15px;
+}
+
+section#task-1 > div:first-child > div:first-child > div:first-child {
+    flex-basis: 50%;
+    padding: 40px;
+    place-content: flex-end;
+}
+
+section#task-1 > div:first-child > div:first-child > div:first-child > h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0E0E0E;
+}
+
+section#task-1 > div:first-child > div:first-child > div:first-child > p {
+    font-size: 16px;
+    color: #0E0E0E99;
+    margin-top: 10px;
+}
+
+section#task-1 > div:first-child > div:first-child > div:last-child {
+    flex-basis: 50%;
+    background-image: url('../img/mobile-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 40px;
+    background-size: 80%;
+    position: relative;
+    padding: 120px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+section#task-1 > div:first-child > div:first-child > div:last-child > p:first-child {
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    width: 300px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transform: rotate(-2.5deg) translateX(-30px);
+}
+
+section#task-1 > div:first-child > div:first-child > div:last-child > p:nth-child(2) {
+    font-size: 18px;
+    color: #0e0e0e;
+    background-color: #f4f4f4;
+    width: 320px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transform: rotate(2.5deg);
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+section#task-1 > div:first-child > div:first-child > div:last-child > p:nth-child(3) {
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    width: 300px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transform: rotate(1deg) translateX(-30px);
+    margin-top: 20px;
+}
+
+section#task-1 > div:first-child > div:first-child > div:last-child > p:last-child {
+    font-size: 18px;
+    color: #0e0e0e;
+    background-color: #f4f4f4;
+    width: 320px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transform: rotate(-2.5deg);
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+section#task-1 > div:first-child > div:first-child > div:last-child:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    border-radius: 25px;
+}
+
+section#task-1 > div:first-child > div:first-child > div:last-child > p > img {
+    width: 18px;
+}
+
+section#task-1 > div:first-child > div:last-child {
+    flex-basis: calc(33% - 5px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+section#task-1 > div:first-child > div:last-child > div:first-child {
+    flex-basis: calc(50% - 5px);
+    border-radius: 25px;
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#task-1 > div:first-child > div:last-child > div:first-child > p {
+    color: #FFFFFF99;
+    font-size: 16px;
+}
+
+section#task-1 > div:first-child > div:last-child > div:first-child > h1 {
+    color: #FFFFFF;
+    font-size: 80px;
+}
+
+section#task-1 > div:first-child > div:last-child > div:last-child {
+    flex-basis: calc(50% - 5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+section#task-1 > div:last-child {
+    flex-basis: calc(33% - 5px);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section#task-1 > div:last-child > div:first-child {
+    flex-basis: calc(50% - 5px);
+    padding: 40px;
+    border-radius: 25px;
+    background-image: url('../img/clouds-bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+section#task-1 > div:last-child > div:first-child > h1 {
+    margin: auto;
+    color: white;
+    font-size: 80px;
+}
+
+section#task-1 > div:last-child > div:first-child > h2 {
+    color: white;
+    font-size: 28px;
+}
+
+section#task-1 > div:last-child > div:first-child > p {
+    color: #ffffff99;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+section#task-1 > div:last-child > div:last-child {
+    flex-basis: calc(50% - 5px);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px;
+}
+
+section#task-1 > div:last-child > div:last-child > h1 {
+    font-size: 28px;
+    color: #0e0e0e;
+}
+
+section#task-1 > div:last-child > div:last-child > p {
+    font-size: 16px;
+    color: #0e0e0e99;
+    margin-top: 10px;
+}
+
+section#task-1 > div:last-child > div:last-child > div {
+    flex-basis: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+section#task-1 > div:last-child > div:last-child > div > p:first-child {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    padding: 12px 24px;
+    border-radius: 28px;
+    rotate: -2.5deg;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+section#task-1 > div:last-child > div:last-child > div > p:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    padding: 12px 24px;
+    border-radius: 28px;
+    rotate: 10deg;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-delay: 0.1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+section#task-1 > div:last-child > div:last-child > div > p:nth-child(3) {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    padding: 12px 24px;
+    border-radius: 28px;
+    rotate: 5deg;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    margin: auto;
+}
+
+section#task-1 > div:last-child > div:last-child > div > p:nth-child(4) {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    padding: 12px 24px;
+    border-radius: 28px;
+    rotate: 10deg;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+section#task-1 > div:last-child > div:last-child > div > p:last-child {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    padding: 12px 24px;
+    border-radius: 28px;
+    rotate: -5deg;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@media (max-width: 1200px) {
+    section#task-1 {
+        flex-direction: column;
+        height: 1684px;
+    }
+
+    section#task-1 > div:first-child, section#task-1 > div:last-child {
+        flex-basis: calc(50% - 5px);
+    }
+}
+
+@media (max-width: 800px) {
+    section#task-1 {
+        height: 2080px;
+    }
+    section#task-1 > div:first-child > div:first-child, section#task-1 > div:first-child > div:last-child {
+        flex-direction: column;
+    }
+
+    section#task-1 > div:first-child {
+        flex-basis: calc(67% - 5px);
+    }
+
+    section#task-1 > div:first-child > div:first-child {
+        flex-basis: calc(60% - 5px);
+    }
+
+    section#task-1 > div:first-child > div:last-child {
+        flex-basis: calc(40% - 5px);
+    }
+
+    section#task-1 > div:last-child {
+        flex-basis: calc(33% - 5px);
+    }
+
+    section#task-1 > div:first-child > div:first-child > div:first-child {
+        flex-basis: calc(25% - 5px);
+        padding-left: 50%;
+    }
+
+    section#task-1 > div:first-child > div:first-child > div:last-child {
+        flex-basis: calc(75% - 5px);
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
